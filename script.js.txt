@@ -1,0 +1,16 @@
+document.getElementById('toolForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('toolName').value.trim();
+  const desc = document.getElementById('toolDesc').value.trim();
+  const url = document.getElementById('toolURL').value.trim();
+
+  if (!name || !desc || !url) return;
+
+  const toolDiv = document.createElement('div');
+  toolDiv.className = 'tool';
+  toolDiv.innerHTML = `<strong>${name}</strong><br>${desc}<br><a href="${url}" target="_blank">🔗 رابط الأداة</a>`;
+
+  document.getElementById('toolsList').appendChild(toolDiv);
+  this.reset();
+});

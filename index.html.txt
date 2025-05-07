@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مولد أدوات الذكاء الاصطناعي – ToolMaster</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 مولد أدوات الذكاء الاصطناعي <span class="pulse">ToolMaster</span></h1>
+    <p class="subtitle">أنشئ أدواتك الخاصة بسهولة، باللغة العربية.</p>
+    
+    <form id="toolForm" class="card animate-up">
+      <input type="text" id="toolName" placeholder="اسم الأداة" required>
+      <input type="text" id="toolDesc" placeholder="وصف الأداة" required>
+      <input type="url" id="toolURL" placeholder="رابط الأداة" required>
+      <button type="submit">➕ إضافة الأداة</button>
+    </form>
+
+    <div id="toolsList" class="tools animate-fade"></div>
+
+    <footer>By <a href="https://facebook.com/AIWorld" target="_blank">Wagdi Hassan</a></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
